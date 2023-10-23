@@ -23,6 +23,7 @@ class Date:
         self.month = month
         self.year = year
 
+class DateImplementation(Date):
     def __str__(self):
         return f"{self.day}/{self.month}/{self.year}"
     
@@ -31,6 +32,6 @@ class Date:
         day = int(input("Entrez le jour : "))
         month = int(input("Entrez le mois : "))
         year = int(input("Entrez l'année : "))
-        return Date(day, month, year)
+        return DateImplementation(day, month, year)
     
-print(Date.create_date())
+print(DateImplementation.create_date())

@@ -16,7 +16,7 @@
 # 2. créez une fonction permettant de créer une personne par saisie des informations sur
 # son nom, prénom, date naissance et date d’embauche.
 
-from exo6 import Date
+from exo6 import DateImplementation
 
 class Person():
     def __init__(self, first_name, last_name, birth_date, hire_date):
@@ -32,8 +32,8 @@ class Person():
     def create_person():
         first_name = input("Entrez le prénom : ")
         last_name = input("Entrez le nom : ")
-        birth_date = Date.create_date()
-        hire_date = Date.create_date()
+        birth_date = DateImplementation.create_date()
+        hire_date = DateImplementation.create_date()
         return Person(first_name, last_name, birth_date, hire_date)
     
 #print(Person("John", "Doe", "07/03/1999", "15/04/2023"))
