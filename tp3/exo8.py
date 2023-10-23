@@ -21,4 +21,4 @@ class DateCompare(Date):
                     return True
         return False
     
-print(DateCompare.is_more_recent(Date(10, 10, 1000), Date(10, 10, 1999)))
+# print(DateCompare.is_more_recent(Date(10, 10, 1000), Date(10, 10, 1999)))

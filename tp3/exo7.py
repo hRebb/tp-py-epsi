@@ -28,13 +28,13 @@ class Person():
     def __str__(self):
          return f"{self.first_name} {self.last_name} {self.birth_date} {self.hire_date}"
     
-    @staticmethod
-    def create_person():
-        first_name = input("Entrez le prénom : ")
-        last_name = input("Entrez le nom : ")
-        birth_date = DateImplementation.create_date()
-        hire_date = DateImplementation.create_date()
-        return Person(first_name, last_name, birth_date, hire_date)
+    # @staticmethod
+    # def create_person():
+    #     first_name = input("Entrez le prénom : ")
+    #     last_name = input("Entrez le nom : ")
+    #     birth_date = DateImplementation.create_date()
+    #     hire_date = DateImplementation.create_date()
+    #     return Person(first_name, last_name, birth_date, hire_date)
     
 #print(Person("John", "Doe", "07/03/1999", "15/04/2023"))
-print(Person.create_person())
+# print(Person.create_person())
