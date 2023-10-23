@@ -3,8 +3,7 @@
 # https://gbfs.citibikenyc.com/gbfs/fr/station_status.json
 # Installez la lib Requests, qui vous permettra de faire des requêtes web afin d'interroger cette API.
 
-import json
-import requests
+import json, requests
 
 def get_station_information():
     response = requests.get("https://gbfs.citibikenyc.com/gbfs/fr/station_information.json")
